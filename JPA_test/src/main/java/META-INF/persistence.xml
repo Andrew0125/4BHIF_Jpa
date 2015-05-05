@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="JPA_test">
+		<class>at.spenger.deu14423.jpa.model.AArtist</class>
+		<class>at.spenger.deu14423.jpa.model.DDemographic</class>
+		<class>at.spenger.deu14423.jpa.model.DDoujinshi</class>
+		<class>at.spenger.deu14423.jpa.model.FFandom</class>
+		<class>at.spenger.deu14423.jpa.model.GGenre</class>
+		<class>at.spenger.deu14423.jpa.model.KbKurzbeschreibung</class>
+		<class>at.spenger.deu14423.jpa.model.LLesetage</class>
+		<class>at.spenger.deu14423.jpa.model.LLesetagePK</class>
+		<class>at.spenger.deu14423.jpa.model.MManga</class>
+		<class>at.spenger.deu14423.jpa.model.MgMagazine</class>
+		<class>at.spenger.deu14423.jpa.model.RRating</class>
+		<class>at.spenger.deu14423.jpa.model.Sg_scanlationGroup</class>
+		<class>at.spenger.deu14423.jpa.model.Ss_scanlationStatus</class>
+		<class>at.spenger.deu14423.jpa.model.TTag</class>
+	</persistence-unit>
+</persistence>
