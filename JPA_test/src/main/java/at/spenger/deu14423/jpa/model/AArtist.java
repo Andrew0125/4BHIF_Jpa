@@ -63,11 +63,11 @@ public class AArtist implements Serializable {
 		this.id = id;
 	}
 
-	public int getBakaID() {
+	public Integer getBakaID() {
 		return this.bakaID;
 	}
 
-	public void setBakaID(int bakaID) {
+	public void setBakaID(Integer bakaID) {
 		this.bakaID = bakaID;
 	}
 
@@ -187,4 +187,11 @@ public class AArtist implements Serializable {
 		return MMangas2;
 	}
 
+	@Override
+	public String toString()
+	{
+		return "AArtist [id=" + id + ", bakaID=" + bakaID + ", circle=" + circle + ", createdDate=" + createdDate
+				+ ", fan=" + fan + ", homepage=" + homepage + ", modifiedDate=" + modifiedDate + ", name=" + name
+				+ ", pixiv=" + pixiv + ", tumblr=" + tumblr + ", twitter=" + twitter + "]";
+	}
 }
