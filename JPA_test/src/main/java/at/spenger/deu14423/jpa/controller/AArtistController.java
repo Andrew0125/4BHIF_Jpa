@@ -19,7 +19,7 @@ public class AArtistController
 	@Autowired
 	private AArtistService artists;
 	
-	@RequestMapping(value="/artists", method=RequestMethod.GET)
+	@RequestMapping(value="/artist", method=RequestMethod.GET)
 	@ResponseBody
 	public String getArtists()
 	{
@@ -45,7 +45,7 @@ public class AArtistController
 		return "User " + id + " does not exist.";
 	}
 	
-	@RequestMapping(value ="/artist/create", method=RequestMethod.GET)
+	@RequestMapping(value ="/artist", method=RequestMethod.POST)
 	@ResponseBody
 	public String createArtist(
 			@RequestParam(value="name", required=true) String name,
@@ -58,7 +58,7 @@ public class AArtistController
 		return a.toString();
 	}
 	
-	@RequestMapping(value ="/artist/{id}/delete", method=RequestMethod.GET)
+	@RequestMapping(value ="/artist/{id}", method=RequestMethod.DELETE)
 	@ResponseBody
 	public String deleteArtist(@PathVariable int id)
 	{
